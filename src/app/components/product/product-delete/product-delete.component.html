@@ -1,0 +1,8 @@
+<h2 mat-dialog-title>Apagar {{ product.name }}</h2>
+<mat-dialog-content class="mat-typography">
+  <h3>Tem certeza que deseja excluir o registro?</h3>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button color="warn" mat-button (click)="delete()" [mat-dialog-close]="true" cdkFocusInitial>Excluir</button>
+</mat-dialog-actions>
